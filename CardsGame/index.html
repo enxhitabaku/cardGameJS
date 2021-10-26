@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./index.css">
+
+    <title>Cards</title>
+</head>
+
+<body>
+   
+    <section class="main-section">
+        <div class="container">
+
+            <div class="col col-user">
+            
+                <div class="user-container">
+                    <h2 style="color: rgba(30, 139, 195, 1);" id="user-1">User 1</h2>
+                    <button type="button" class="btn user-btn" id="btn-user1" turn="True">Pick</button>
+                </div>
+
+            </div> 
+
+            <div class="col col-center">
+
+                <div class="hide col flex-col align-start" id="card-1">
+                    <span class="row txt-end"> <b class="value">2</b> </span>
+                    <span class="row txt-center"> <b class="suit"> ♠ </b> </span>
+                    <span class="row txt-start"> <b class="value">2</b> </span>
+                </div>
+
+                <!-- To be hidden -->
+                <form action="" id="name-form">
+                    <fieldset class="name-fieldset">
+                        <legend> Users</legend>
+                        
+                        <label for="name">User 1: </label>
+                        <input type="text" class="name-input" name="name">
+    
+                        <label for="name">User 2: </label>
+                        <input type="text" class="name-input" name="name">
+    
+                        <button type="button" class="btn" id="form-btn"> Submit </button>
+                    </fieldset>
+                </form>
+
+                <div class="hide col flex-col align-end" id="card-2">
+                    <span class="txt-end"> <b class="value">5</b> </span>
+                    <span class="txt-center">  <b class="suit"> ♠ </b> </span>
+                    <span class="txt-start"> <b class="value">5</b> </span>
+                </div>
+
+            </div>
+
+            <div class="col col-user">
+                
+                <div class="user-container">
+                    <h2 style="color: rgba(240, 52, 52, 1);" id="user-2">User 2</h2>
+                    <button type="button" class="btn user-btn" id="btn-user2" turn="false" >Pick</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="output">
+        <span > <i id="outputField"> </i> </span>
+    </section>
+
+    <script src="./javascript/main.js" type="module"></script>
+</body>
+</html>
